@@ -30,7 +30,7 @@
 
         ports:
 
-         - "5011:5000"
+         - "5001:5000"
 
 
 
@@ -52,6 +52,26 @@
 
 
 
+    - name: Start container 3
+
+      docker_container:
+
+        name: "container3"
+
+        recreate: yes
+
+        image: apppoei:latest
+
+        state: started
+
+        ports:
+
+         - "5003:5000"
+
+
+
+
+
     - name: start lb
 
       docker_container:
@@ -67,3 +87,5 @@
         ports:
 
          - "8090:80"
+
+
