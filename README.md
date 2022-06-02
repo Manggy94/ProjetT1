@@ -14,4 +14,4 @@ which includes
 
 then run the `pytest` command 
 
-# app deploy in containers
+# Test pipeline
